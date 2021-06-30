@@ -7,9 +7,9 @@ from panda.tests.safety import libpandasafety_py
 import panda.tests.safety.common as common
 from panda.tests.safety.common import CANPackerPanda, UNSAFE_MODE
 
-MAX_RATE_UP = 7
-MAX_RATE_DOWN = 17
-MAX_STEER = 300
+MAX_RATE_UP = 16
+MAX_RATE_DOWN = 32
+MAX_STEER = 400
 MAX_BRAKE = 350
 MAX_GAS = 3584
 MAX_REGEN = 1404
@@ -18,7 +18,7 @@ MAX_RT_DELTA = 128
 RT_INTERVAL = 250000
 
 DRIVER_TORQUE_ALLOWANCE = 50
-DRIVER_TORQUE_FACTOR = 4
+DRIVER_TORQUE_FACTOR = 6
 
 class TestGmSafety(common.PandaSafetyTest):
   TX_MSGS = [[384, 0], [1033, 0], [1034, 0], [715, 0], [880, 0],  # pt bus
