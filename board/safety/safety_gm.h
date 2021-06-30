@@ -8,13 +8,13 @@
 //      brake rising edge
 //      brake > 0mph
 
-const int GM_MAX_STEER = 300;
+const int GM_MAX_STEER = 400;
 const int GM_MAX_RT_DELTA = 128;          // max delta torque allowed for real time checks
 const uint32_t GM_RT_INTERVAL = 250000;    // 250ms between real time checks
-const int GM_MAX_RATE_UP = 7;
-const int GM_MAX_RATE_DOWN = 17;
+const int GM_MAX_RATE_UP = 16;
+const int GM_MAX_RATE_DOWN = 32;
 const int GM_DRIVER_TORQUE_ALLOWANCE = 50;
-const int GM_DRIVER_TORQUE_FACTOR = 4;
+const int GM_DRIVER_TORQUE_FACTOR = 6;
 const int GM_MAX_GAS = 3072;
 const int GM_MAX_REGEN = 1404;
 const int GM_MAX_BRAKE = 350;
